@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Rabbit Sort</title>
+
+    
+    
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+    <h4>Game Rules</h4>
+    <p>
+        The goal of this game is to sort both the hat and rabbit tokens from left to right in ascending order.
+        Both hats and rabbits tokens are numbered from 1 to 9. <br>
+        You will only see 9 stacks, hat tokens are stacked over rabbit tokens, so you cannot see the number on the rabbit tokens.
+        
+    </p>
+    <p>
+        You have 2 minutes and 3 actions in order to sort them:
+        <li>
+            <ul>"Peeking" shows you the rabbit token underneath the hat token.</ul>
+            <ul>"Swapping hats" swaps the hats of two stacks.</ul>
+            <ul>"Swapping all" swaps the hats and rabbits tokens of two stacks.</ul>
+        </li>
+    
+        You can use the number keys to directly select the stack with the hat token whose number match the one pressed.
+    </p>
+    <h4>Difficulty</h4>
+    <p>
+        Difficulty up to level 4 add one lock per level, a locked stack cannot be selected for any action.<br>
+        Difficulty level 5 add a random swap of stacks every 3 moves but removes all locks.<br>
+        Difficulty after level 5 add one lock per level up to 3.<br>
+        And the last two difficulty level each remove 30 seconds.
+    </p>
+    <h4>Note on random swaps</h4>
+    <p>
+        Since random swaps with locks can be very hard to sort because of bad luck, once the hat tokens and rabbit tokens are correctly paired, swaps no longer occur.
+    </p>
+
+    <!-- Minified Two -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.6.0/two.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./helper.js"></script>
+    <script src="./game.js"></script>
+    <script src="./render.js"></script>
+
+</body>
